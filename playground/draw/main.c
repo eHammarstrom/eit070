@@ -22,8 +22,18 @@ int main() {
                 print_err(SDL_GetError());
                 return EXIT_FAILURE;
         }
+
+        const SDL_Rect rect = { .x = 0, .y = 0, .w = 1600, .h = 900 };
+
+        SDL_RenderClear(window_renderer); // clear render
+
+        SDL_SetRenderDrawColor(window_renderer, 255, 0, 0, 255);
+        SDL_RenderDrawRect(window_renderer, &rect);
+        SDL_RenderFillRect(window_renderer, &rect);
+
+        SDL_RenderPresent(window_renderer); // draw render
     
-        sleep(2);
+        sleep(5);
 
         SDL_DestroyWindow(window);
         SDL_Quit();

@@ -24,7 +24,7 @@ int main() {
                         struct pixel p = {
                                 .red = 255,
                                 .green = 255,
-                                .blue = 255
+                                .blue = 255,
                                 .alpha = 255
                         };
 
