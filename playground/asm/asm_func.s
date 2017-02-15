@@ -38,14 +38,13 @@ is_symmetric:
     xor     %r11d, %r11d            # set 0
     xor     %r12d, %r12d            # set 0
     mov     %edi, %r10d             # move input parameter to r10d
-    mov     $16, %r14b              # use %r14b as counter = 31
-    mov     and_bin(%rip), %r13d    # use r13d as 0b100000000000... AND shifter
-
-    mov     $31, %cl                # use cl to shift to symmetrically
+    mov     $16, %r14b              # use %r14b as counter = 16
+    mov     and_bin(%rip), %r13d    # use r13d as 0b100000000000... AND shifter to single out target bit
+    mov     $31, %cl                # use cl to shift to symmetrical point (32 bits mirrored at 16 bits to check if symmetrical)
 
 loopy:
-    cmp     $0, %r14b               # 16 - 0 > 0 ... 16 - 16 = 0, ZF = 1
-    jz      end                     # if SF = 1, jump to end
+    cmp     $0, %r14b               # when 16 - 0 = 0, ZF = 1
+    jz      end                     # if ZF = 1, jump to end tag
 
     mov     %r10d, %r11d            # move input (r10d) to temp (r11d)
     and     %r13d, %r11d            # use r13d (AND shifter) to single out target bit
@@ -62,7 +61,7 @@ end:
     cmp     %r10d, %r12d            # compare ANDED input with calculation
 
     xor     %rax, %rax              # set ALL return bits to 0
-    setz    %al                     # if ZF = 0 then set %al to 1 (r10d and r12d had equal values)
+    setz    %al                     # if ZF = 1 then set %al to 1 (r10d and r12d had equal values)
     # mov     %r10d, %eax
     # mov     %r12d, %eax
     # mov     %r13d, %eax
@@ -70,10 +69,10 @@ end:
     ret
 
 clean_bin:
-    .long 0x0000FFFF
+    .long 0x0000FFFF # 16 zeros followed by 16 ones
 
 and_bin:
-    .long 0x80000000
+    .long 0x80000000 # (0b10000...)
 
 # 0x11011011 has a binary representation of 0b10001000000010001000000010001
 # we are interested in mirroring leftmost 16 bits to 0b0001000000010001
