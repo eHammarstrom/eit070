@@ -33,49 +33,57 @@ asm_func:
     # Se om både start register och slutregister samma värde, isåfall symmetrisk input
     # Då sätts ZF = 1 och vi kan sätta EAX = ZF och returnera
 
-.extern printf
-
     .globl is_symmetric
 is_symmetric:
-    xor     %r11d, %r11d
-    xor     %r12d, %r12d
-    mov     %edi, %r10d # move parameter to r10
-    mov     $31, %cl # counter = 31
-    mov     and_bin(%rip), %r13d
+    xor     %r11d, %r11d            # set 0
+    xor     %r12d, %r12d            # set 0
+    mov     %edi, %r10d             # move input parameter to r10d
+    mov     $16, %r14b              # use %r14b as counter = 31
+    mov     and_bin(%rip), %r13d    # use r13d as 0b100000000000... AND shifter
+
+    mov     $31, %cl                # use cl to shift to symmetrically
 
 loopy:
-    cmp     $16, %cl # if %ecx < 0 then SF = 1
-    jl      end # jump if SF = 1
+    cmp     $0, %r14b               # 16 - 0 > 0 ... 16 - 16 = 0, ZF = 1
+    jz      end                     # if SF = 1, jump to end
 
-    mov     %r10d, %r11d
-    and     %r13d, %r11d
-    sar     %cl, %r11d
-    addl    %r11d, %r12d
+    mov     %r10d, %r11d            # move input (r10d) to temp (r11d)
+    and     %r13d, %r11d            # use r13d (AND shifter) to single out target bit
+    shr     %cl, %r11d              # shift target bit 31 ( - 2 per loop ) steps to the right
+    addl    %r11d, %r12d            # add bit to total
 
-    sar     $1, %r13d
-    sub     $2, %cl # counter -= 2
-    jmp     loopy
+    shr     $1, %r13d               # prepare AND shifter for next bit
+    sub     $2, %cl                 # prepare cl for next symmetric shift
+    sub     $1, %r14b               # counter -= 1
+    jmp     loopy                   # jump back up to loopy
 end:
 
-    and     clean_bin(%rip), %r11d
-    cmp     %r11d, %r12d
+    and     clean_bin(%rip), %r10d  # if input if 0xFFFFFFFF we want only 0x0000FFFF to compare with our calculated register (hopefully also 0x0000FFFF)
+    cmp     %r10d, %r12d            # compare ANDED input with calculation
 
-    mov     %r11d, %edi
-    call    printf
-    mov     %r12d, %edi
-    call    printf
-
-    # xor     %eax, %eax
-    # mov     %r11d, %eax
-    xor     %al, %al
-    setz    %al
+    xor     %rax, %rax              # set ALL return bits to 0
+    setz    %al                     # if ZF = 0 then set %al to 1 (r10d and r12d had equal values)
+    # mov     %r10d, %eax
+    # mov     %r12d, %eax
+    # mov     %r13d, %eax
+    # mov     and_bin(%rip), %eax
     ret
 
 clean_bin:
     .long 0x0000FFFF
 
 and_bin:
-    .long 0xF0000000
+    .long 0x80000000
+
+# 0x11011011 has a binary representation of 0b10001000000010001000000010001
+# we are interested in mirroring leftmost 16 bits to 0b0001000000010001
+# clearing 16 first bits in input so that it also has value of 0b0001000000010001
+# comparing these will set ZF = 1 which we will return, otherwise return 0
+
+# with 0x11011011
+# r10d = 4113 = 0b0001000000010001
+# r12d = 32904 = 0b1000000010001000
+# r12d should be equal to r10d in this case
 
 # <initiumdoeslinux> Hello, I am trying to learn gas assembly and need some help. What is the preferred code paste in here?
 # <Jester01> whichever you like
