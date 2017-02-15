@@ -23,29 +23,52 @@ asm_func:
 # https://docs.oracle.com/cd/E26502_01/html/E28388/eoiyg.html
 # http://unixwiz.net/techtips/x86-jumps.html
 
+    # AND:a ut första biten
+    # Flytta första biten 31 steg
+    # AND:a ut andra biten
+    # Flytta andra biten 29 steg
+    # För varje AND och FLYTT, addera resultat i ett register
+    # Repetera 8 gånger
+    # AND:a bort den gamla halvan
+    # Se om både start register och slutregister samma värde, isåfall symmetrisk input
+    # Då sätts ZF = 1 och vi kan sätta EAX = ZF och returnera
+
+.extern printf
+
     .globl is_symmetric
 is_symmetric:
     xor     %r11d, %r11d
     xor     %r12d, %r12d
-    xor     %r13d, %r13d
-    xor     %r14d, %r14d
-    xor     %r15d, %r15d
-
     mov     %edi, %r10d # move parameter to r10
-
-    mov     $31, %ecx # counter = 31
+    mov     $31, %cl # counter = 31
+    mov     and_bin(%rip), %r13d
 
 loopy:
-    cmp     $0, %ecx # if %ecx < 0 then SF = 1
+    cmp     $16, %cl # if %ecx < 0 then SF = 1
     jl      end # jump if SF = 1
 
-    subl    $2, %ecx # counter -= 2
+    mov     %r10d, %r11d
+    and     %r13d, %r11d
+    sar     %cl, %r11d
+    addl    %r11d, %r12d
+
+    sar     $1, %r13d
+    sub     $2, %cl # counter -= 2
     jmp     loopy
 end:
 
-    xor     %eax, %eax
+    and     clean_bin(%rip), %r11d
+    cmp     %r11d, %r12d
+
+    mov     %r11d, %edi
+    call    printf
+    mov     %r12d, %edi
+    call    printf
+
+    # xor     %eax, %eax
     # mov     %r11d, %eax
-    mov     clean_bin(%rip), %eax # TEST PRINT
+    xor     %al, %al
+    setz    %al
     ret
 
 clean_bin:
