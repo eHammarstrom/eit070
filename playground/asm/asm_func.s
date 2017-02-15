@@ -35,14 +35,10 @@ end:
     cmp     %r10d, %r12d            # compare ANDED input with calculation
 
     setz    %al                     # if ZF = 1 then set %al to 1 (r10d and r12d had equal values)
-    # mov     %r10d, %eax
-    # mov     %r12d, %eax
-    # mov     %r13d, %eax
-    # mov     and_bin(%rip), %eax
     ret
 
 clean_bin:
-    .long 0x0000FFFF # 16 zeros followed by 16 ones
+    .long 0x0000FFFF                # 16 zeros followed by 16 ones
 
 and_bin:
-    .long 0x80000000 # (0b10000...)
+    .long 0x80000000                # (0b10000...)
