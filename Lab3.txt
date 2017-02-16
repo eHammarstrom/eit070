@@ -1,0 +1,125 @@
+Assignment 1.
+
+Study the code. What does the program do?
+
+	Sets switches control address to input
+	Sets led control to output
+	Reads switches continously and writes switch bits to led bits for display
+
+What is the difference between the memory addresses of two consecutive machine instructions?
+
+	??? 4 bytes
+
+What is the size of each instruction?
+
+	4 bytes
+
+What does the instruction “addk r1, r19, r0” do?
+
+	Adds r19 and r0 and stores the answer at r1 (and keeps the carry flag)
+
+What do the values stored in the rpc register reference to?
+
+	The current instruction of execution
+
+Which instructions modify the rpc register?
+
+	brlid r15, 12
+	bri -8
+
+	imm, bri, brlid
+
+Which instruction modifies the register r15?
+
+	brlid r15, 12
+
+What does that instruction do?
+
+	Stores PC at r15 and jumps 12 steps immediately
+
+What does the value stored in r15 reference to?
+
+	The PC before the jump
+
+Which instructions are used to load values from memory?
+
+	lwi, lw
+
+Which instructions are used to store values in memory?
+
+	swi, sw
+
+Where is the variable “temp” stored?
+
+	r3
+
+What is the address of the “temp” variable?
+
+	r3 = r19 + 4 = 0x26f8 + 0x4 = 0x26fc
+
+The address of the “temp” variable is obtained by adding an immediate value to the
+			value of register r1. What does the value in the register r1 reference to?
+
+	0x26f8
+
+
+What is the size of the stack frame?
+
+	12 addresses = 12 * 4 byte = 48 byte
+
+What is stored in the stack frame?
+
+	return address
+	local variables
+	save registers
+	input arguments to callee funcs
+
+Which instruction is used to return from a function call?
+
+	rtsd
+
+How does the program know where to return?
+
+	brlid stores PC in r15 before jumping to function
+
+Which register keeps the return address?
+
+	r15
+
+What happens with the stack pointer before the function returns?
+
+	it shrinks back 48 bytes (12 addresses)
+
+Assignment 2.
+
+Which register stores the output of the function “readSwitches”?
+
+	r3
+
+Which register does the function “readSwitches_writeLed” use to pass the argument to the function “writeLed”?
+
+	r5
+
+If a function calls another function, what is stored at the stack 
+			pointer, in the stack frame allocated for the caller function? Why?
+
+	The current depth of the sum of the allocation of all of the functions.
+
+	Stepping into the first function we allocate 36 addresses 	PNTR: 0x24
+	Stepping into the second function we allocate 12 addresses 	PNTR: 0x30
+	Stepping out of the second function we release 12 addresses 	PNTR: 0x24
+	...
+	...
+	Stepping out of the first function we release 36 addresses	PNTR: 0x0
+
+What is the size of the stack frame of the function “readSwitches_writeLed”?
+
+	36 addresses
+
+Assignment 3.
+	1	2	3	4	5	6	7	8
+
+	36	36	36	36	36	36	40	44
+	r5	r5	r5	r5	r5	r5	r5	r5
+		r3	r3	r3	r3	r3	r3	r3
+								r4
