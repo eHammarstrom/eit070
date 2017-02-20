@@ -3984,3 +3984,1665 @@ make: Inget behöver göras för "all".
 14:10:25 **** Incremental Build of configuration Debug for project Lab3 ****
 make all 
 make: Inget behöver göras för "all".
+08:24:35 **** Auto Build of project Lab1_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_4/src"
+make -C microblaze_0/libsrc/cpu_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_4/src"
+make -C microblaze_0/libsrc/standalone_v5_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_1/src"
+make -C microblaze_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_4/src"
+make -C microblaze_0/libsrc/cpu_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_4/src"
+make -C microblaze_0/libsrc/standalone_v5_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_1/src"
+make -C microblaze_0/libsrc/tmrctr_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+'Finished building libraries'
+08:24:49 **** Auto Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+08:24:50 **** Auto Build of project Lab2_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_4/src"
+make -C microblaze_0/libsrc/cpu_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_4/src"
+make -C microblaze_0/libsrc/standalone_v5_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_1/src"
+make -C microblaze_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_4/src"
+make -C microblaze_0/libsrc/cpu_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_4/src"
+make -C microblaze_0/libsrc/standalone_v5_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_1/src"
+make -C microblaze_0/libsrc/tmrctr_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+'Finished building libraries'
+08:25:00 **** Auto Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+08:25:00 **** Auto Build of project Lab3_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_4/src"
+make -C microblaze_0/libsrc/cpu_v2_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_4/src"
+make -C microblaze_0/libsrc/standalone_v5_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_1/src"
+make -C microblaze_0/libsrc/tmrctr_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_4/src"
+make -C microblaze_0/libsrc/cpu_v2_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_4/src"
+make -C microblaze_0/libsrc/standalone_v5_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_1/src"
+make -C microblaze_0/libsrc/tmrctr_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.4 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+'Finished building libraries'
+08:25:09 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+08:28:27 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+08:28:27 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+08:28:28 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+08:30:19 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+08:30:23 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6416	    344	   3248	  10008	   2718	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+08:30:27 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+08:30:27 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+08:30:27 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+08:31:04 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+08:31:05 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+08:31:05 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+09:08:39 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+09:08:44 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6628	    344	   3252	  10224	   27f0	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:09:11 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:43:6: error: conflicting types for 'writeLed'
+ void writeLed(unsigned int value) { //, unsigned int v1, unsigned int v2, unsigned int v3, unsigned int v4, unsigned int v5, unsigned int v6, unsigned int v7) {
+      ^
+../src/main.c:22:6: note: previous declaration of 'writeLed' was here
+ void writeLed(unsigned int value, unsigned int v1, unsigned int v2, unsigned int v3, unsigned int v4, unsigned int v5, unsigned int v6, unsigned int v7);
+      ^
+make: *** [src/main.o] Fel 1
+09:09:24 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6524	    344	   3252	  10120	   2788	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:09:40 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+09:09:40 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+09:09:40 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+09:42:54 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'readSwitches_writeLed':
+../src/main.c:34:2: error: too few arguments to function 'writeLed'
+  writeLed(temp); //, temp + 1, temp + 2, temp + 3, temp + 4, temp + 5, temp + 6, temp + 7); //the i-th argument is temp+i
+  ^
+../src/main.c:22:6: note: declared here
+ void writeLed(unsigned int value, unsigned int v1, unsigned int v2, unsigned int v3, unsigned int v4, unsigned int v5, unsigned int v6, unsigned int v7);
+      ^
+../src/main.c: At top level:
+../src/main.c:43:6: error: conflicting types for 'writeLed'
+ void writeLed(unsigned int value) { //, unsigned int v1, unsigned int v2, unsigned int v3, unsigned int v4, unsigned int v5, unsigned int v6, unsigned int v7) {
+      ^
+../src/main.c:22:6: note: previous declaration of 'writeLed' was here
+ void writeLed(unsigned int value, unsigned int v1, unsigned int v2, unsigned int v3, unsigned int v4, unsigned int v5, unsigned int v6, unsigned int v7);
+      ^
+make: *** [src/main.o] Fel 1
+09:43:00 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6628	    344	   3252	  10224	   27f0	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:52:05 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+09:52:08 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+09:52:27 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+09:52:36 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+../src/AssemblyImplementation.S: Assembler messages:
+../src/AssemblyImplementation.S:12: Error: unknown opcode "…"
+make: *** [src/AssemblyImplementation.o] Fel 1
+09:52:40 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+09:53:03 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+09:53:07 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+09:53:56 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+09:54:15 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6348	    344	   3252	   9944	   26d8	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:54:19 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6348	    344	   3252	   9944	   26d8	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:54:46 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6348	    344	   3252	   9944	   26d8	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:54:49 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6348	    344	   3252	   9944	   26d8	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:57:53 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+09:57:57 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+09:58:05 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6348	    344	   3252	   9944	   26d8	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:58:13 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6376	    344	   3248	   9968	   26f0	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:58:18 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6376	    344	   3248	   9968	   26f0	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:58:21 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6376	    344	   3248	   9968	   26f0	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:58:23 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6376	    344	   3248	   9968	   26f0	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+09:58:33 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+09:58:33 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+09:58:34 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+09:59:03 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+09:59:04 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+09:59:04 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+10:05:08 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+10:05:09 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+10:05:09 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+10:09:24 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+10:09:37 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6440	    344	   3248	  10032	   2730	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:09:41 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+10:09:42 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+10:09:42 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+10:10:30 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+10:10:31 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+10:10:31 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+10:14:05 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+10:14:08 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6376	    344	   3248	   9968	   26f0	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:45:18 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `function':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:23: undefined reference to `number_of_ones'
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:26: undefined reference to `translateN'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+10:45:22 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `function':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:23: undefined reference to `number_of_ones'
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:26: undefined reference to `translateN'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+10:45:39 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `function':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:26: undefined reference to `translateN'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+10:45:45 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    344	   3252	  10112	   2780	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:45:52 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    344	   3252	  10112	   2780	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:46:07 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    344	   3252	  10112	   2780	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:46:23 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    344	   3252	  10112	   2780	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:46:33 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    344	   3252	  10112	   2780	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:46:51 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    344	   3252	  10112	   2780	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:47:48 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+10:47:56 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    344	   3252	  10112	   2780	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+10:48:02 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+10:48:03 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+10:48:03 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+10:48:42 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+10:48:42 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+10:48:42 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+10:59:51 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+10:59:51 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+10:59:52 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+11:02:28 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+11:02:28 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+11:02:29 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+11:15:01 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `arg_ready':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:87: undefined reference to `first_position_of_one'
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:91: undefined reference to `display_value_at_index'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+11:15:38 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `arg_ready':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:87: undefined reference to `first_position_of_one'
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:91: undefined reference to `display_value_at_index'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+11:16:10 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `arg_ready':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:91: undefined reference to `display_value_at_index'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+11:16:43 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `reset_display':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:132: undefined reference to `display_codes'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+11:16:46 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `reset_display':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:133: undefined reference to `display_codes'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+11:16:57 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `reset_display':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:132: undefined reference to `display_codes'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+11:16:59 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `reset_display':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:132: undefined reference to `display_codes'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+11:18:20 **** Clean-only build of configuration Debug for project Lab2 ****
+make clean 
+rm -rf  ./src/displays.o ./src/main.o  ./src/displays.d ./src/main.d  Lab2.elf.size  Lab2.elf
+' '
+11:18:20 **** Auto Build of configuration Debug for project Lab2 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab2_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:258:22: fatal error: displays.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] Fel 1
+11:18:21 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/displays.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/displays.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/displays.d" -MT"src/displays.o" -o "src/displays.o" "../src/displays.c"
+'Finished building: ../src/displays.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+11:18:25 **** Auto Build of configuration Debug for project Lab2 ****
+make all 
+'Building file: ../src/displays.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/displays.o" -I../../Lab2_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/displays.d" -MT"src/displays.o" -o "src/displays.o" "../src/displays.c"
+'Finished building: ../src/displays.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab2_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:263:15: warning: built-in function 'index' declared as non-function
+ unsigned char index;
+               ^
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab2.elf"  ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab2.elf  |tee "Lab2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8496	    344	   3272	  12112	   2f50	Lab2.elf
+'Finished building: Lab2.elf.size'
+' '
+11:18:35 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+11:20:25 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+11:20:25 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+11:20:25 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+11:21:00 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:74:1: error: expected expression before '}' token
+ }
+ ^
+make: *** [src/main.o] Fel 1
+11:21:13 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+11:21:30 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+11:21:50 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+11:21:58 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+11:22:04 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+11:22:04 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+11:22:05 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+11:23:55 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+11:25:43 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+11:25:43 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+11:25:44 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+11:36:36 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+make: Inget behöver göras för "all".
+11:36:36 **** Incremental Build of configuration Debug for project Lab2 ****
+make all 
+make: Inget behöver göras för "all".
+11:36:36 **** Incremental Build of configuration Debug for project Lab3 ****
+make all 
+make: Inget behöver göras för "all".
+12:05:03 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:05:09 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:102:3: warning: implicit declaration of function 'make_leds_great_again' [-Wimplicit-function-declaration]
+   make_leds_great_again();
+   ^
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/main.c:102: undefined reference to `make_leds_great_again'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+12:05:31 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:05:40 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:05:50 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:06:38 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:07:12 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    344	   3252	  11576	   2d38	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:07:26 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7988	    344	   3252	  11584	   2d40	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:08:04 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7988	    344	   3252	  11584	   2d40	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:08:13 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7988	    344	   3252	  11584	   2d40	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:08:43 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7988	    344	   3252	  11584	   2d40	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:09:04 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7988	    344	   3252	  11584	   2d40	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:09:58 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/AssemblyImplementation.o: In function `make_leds_great_again':
+C:\Users\dic14eh2\workspace-eit070\Lab3\Debug/../src/AssemblyImplementation.S:136: undefined reference to `LED_DATA'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab3.elf] Fel 1
+12:11:15 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7988	    344	   3252	  11584	   2d40	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:11:35 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7996	    344	   3252	  11592	   2d48	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:11:56 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7996	    344	   3252	  11592	   2d48	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:12:11 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7996	    344	   3252	  11592	   2d48	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:15:17 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8004	    344	   3252	  11600	   2d50	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:18:25 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+../src/AssemblyImplementation.S: Assembler messages:
+../src/AssemblyImplementation.S:152: Error: symbol `while' is already defined
+../src/AssemblyImplementation.S:155: Error: symbol `done' is already defined
+make: *** [src/AssemblyImplementation.o] Fel 1
+12:19:01 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+../src/AssemblyImplementation.S: Assembler messages:
+../src/AssemblyImplementation.S:152: Error: symbol `while' is already defined
+../src/AssemblyImplementation.S:155: Error: symbol `done' is already defined
+make: *** [src/AssemblyImplementation.o] Fel 1
+12:19:13 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+../src/AssemblyImplementation.S: Assembler messages:
+../src/AssemblyImplementation.S:152: Error: symbol `while' is already defined
+../src/AssemblyImplementation.S:155: Error: symbol `done' is already defined
+make: *** [src/AssemblyImplementation.o] Fel 1
+12:19:37 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8020	    344	   3252	  11616	   2d60	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:19:42 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8020	    344	   3252	  11616	   2d60	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:19:58 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+../src/AssemblyImplementation.S: Assembler messages:
+../src/AssemblyImplementation.S:154: Error: register expected, but saw '1'
+../src/AssemblyImplementation.S:154: Warning: ignoring operands: 1 
+make: *** [src/AssemblyImplementation.o] Fel 1
+12:20:13 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+../src/AssemblyImplementation.S: Assembler messages:
+../src/AssemblyImplementation.S:154: Error: register expected, but saw '1'
+../src/AssemblyImplementation.S:154: Warning: ignoring operands: 1 
+make: *** [src/AssemblyImplementation.o] Fel 1
+12:20:23 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8024	    344	   3248	  11616	   2d60	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:20:35 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8028	    344	   3252	  11624	   2d68	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:20:44 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8028	    344	   3252	  11624	   2d68	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '
+12:21:07 **** Auto Build of configuration Debug for project Lab3 ****
+make all 
+'Building file: ../src/AssemblyImplementation.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
+'Finished building: ../src/AssemblyImplementation.S'
+' '
+'Building target: Lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8032	    344	   3248	  11624	   2d68	Lab3.elf
+'Finished building: Lab3.elf.size'
+' '

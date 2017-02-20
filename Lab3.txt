@@ -51,21 +51,20 @@ Which instructions are used to store values in memory?
 
 Where is the variable “temp” stored?
 
-	r3
+	r3 = r19 + 4
 
 What is the address of the “temp” variable?
 
-	r3 = r19 + 4 = 0x26f8 + 0x4 = 0x26fc
+	r19 + 4 = 0x26f8 + 0x4 = 0x26fc
 
 The address of the “temp” variable is obtained by adding an immediate value to the
 			value of register r1. What does the value in the register r1 reference to?
 
-	0x26f8
-
+	0x26f8 (stack frame)
 
 What is the size of the stack frame?
 
-	12 addresses = 12 * 4 byte = 48 byte
+	12 bytes
 
 What is stored in the stack frame?
 
@@ -88,13 +87,13 @@ Which register keeps the return address?
 
 What happens with the stack pointer before the function returns?
 
-	it shrinks back 48 bytes (12 addresses)
+	it shrinks back 12 bytes
 
 Assignment 2.
 
 Which register stores the output of the function “readSwitches”?
 
-	r3
+	r19 + 4 = *r3
 
 Which register does the function “readSwitches_writeLed” use to pass the argument to the function “writeLed”?
 
@@ -103,18 +102,13 @@ Which register does the function “readSwitches_writeLed” use to pass the argumen
 If a function calls another function, what is stored at the stack 
 			pointer, in the stack frame allocated for the caller function? Why?
 
-	The current depth of the sum of the allocation of all of the functions.
+	??? the old stack pointer r19 stored ONE address into the caller function
 
-	Stepping into the first function we allocate 36 addresses 	PNTR: 0x24
-	Stepping into the second function we allocate 12 addresses 	PNTR: 0x30
-	Stepping out of the second function we release 12 addresses 	PNTR: 0x24
-	...
-	...
-	Stepping out of the first function we release 36 addresses	PNTR: 0x0
+	An offsetr of +3*12 bytes from the previous stack pointer value. Since we are allocating addresses for 3 functions.
 
 What is the size of the stack frame of the function “readSwitches_writeLed”?
 
-	36 addresses
+	36 bytes
 
 Assignment 3.
 	1	2	3	4	5	6	7	8
@@ -123,3 +117,170 @@ Assignment 3.
 	r5	r5	r5	r5	r5	r5	r5	r5
 		r3	r3	r3	r3	r3	r3	r3
 								r4
+
+Assignment 4.
+
+At which memory address is the function “readSwitches_writeLed_Assembly” stored?
+
+	000003a8
+
+Are there any differences between the assembly program and the machine code?
+
+	Yes it replaces the assembly address references with the actual addresses.
+
+How is the “nop” instruction translated?
+	
+	or r0, r0, r0 which achieves nothing, NOP
+
+If you compare this program, with the program from Assignment 1, which
+program is more efficient? Why?
+
+	6 instructions (A) vs 11 instructions (C)
+
+	bad compiler
+
+Assignment 5.
+
+How many input arguments are required for the subroutine number_of_ones?
+
+	1
+
+How many input arguments are required for the subroutine translateN?
+
+	1
+
+Does the subroutine number_of_ones provide any outputs?
+
+	N, the amount of ones in the binary representation of the input
+
+Does the subroutine translateN provide any outputs?
+
+	Yes, the bit representation of N
+
+Which of the subroutines require a stack frame?
+
+	function, the other two only use the addresses r2-r12
+
+What is stored in the stack frame, and why?
+
+	r15 is stored in the stack frame, PC
+
+How are arguments passed from a caller to a callee subroutine?
+
+	r5 passes the argument
+
+Which register is used to return an output from a callee to a caller subroutine?
+
+	r3
+
+The subroutines number_of_ones and translateN implement a loop. How are the loops implemented in these subroutines?
+
+	check if r5 is zero, if not continue and r5>>1 and jump back to label while:, if zero jump to label result:
+
+	translateN will loop N times; if r5 = 0 jump to done: else continue and r5--; then jump back up to again:
+
+The global symbols are translated into memory addresses. What are the memory
+		addresses for the symbols: function, translateN, and number_of_ones?
+
+	000003c0 function
+	000003fc number_of_ones
+	00000424 translateN
+
+The subroutine function invokes the subroutine number_of_ones by using the
+		instruction brlid r15, number_of_ones. In the disassembled code, the symbol
+				number_of_ones is replaced by an immediate value. What is the immediate value?
+
+	The byte distance to the function number_of_ones (44 bytes)
+
+Is the immediate value the same as the address for the symbol number_of_ones?
+
+	No, relative jump from current address
+
+The subroutine function invokes the subroutine translateN by using the
+		instruction brlid r15, translateN. In the disassembled code, the symbol
+				translateN is replaced by an immediate value. What is the immediate value?
+
+	72 bytes
+
+Is the immediate value the same as the address for the symbol translateN?
+
+	No, relative jump from current address
+
+How does the processor obtain the address of the callee subroutine?
+
+	By adding the immediate value to the current address
+
+The instruction brid again in the translateN subroutine is part of a loop and it
+	is used to set the program counter to the memory address of the instruction that is
+		labeled with the label “again:”. In the disassembled code, what is the memory
+			address of the instruction labeled with “again:”?
+
+	00000428
+
+Observe the disassembled code. For the instruction brid again in the translateN
+	subroutine, the label again is replaced with an immediate value. What is the
+		immediate value?
+
+	-16
+
+Is it the same as the address of the instruction labeled with the label “again:”?
+
+	Yes
+
+How does the processor compute the address of the instruction that should be
+	executed after the brid instruction?
+
+	By adding the immediate value to the current address
+
+The instruction beqid r5, result in the subroutine number_of_ones is part of a
+	loop and it represents a conditional branch instruction. The symbol result is
+		replaced by an immediate value. What is the immediate value?
+
+	28
+
+How does the processor compute the address of the instruction that should be
+	executed after the beqid instruction?
+
+	By adding the immediate value to the current address
+
+Assignment 6.
+
+What is passed as an input to the subroutine number_of_ones?
+
+	number of rightmost 8 switches activated
+
+Which registers are used to pass arguments to number_of_ones?
+
+	r5
+
+What is passed as input to the subroutine first_position_of_one?
+
+	the value of the 8 leftmost binaries, shifted down 8 bits to the right
+
+Which registers are used to pass arguments to first_position_of_one?
+
+	r5
+
+What is passed as input to the subroutine display_value_at_index?
+
+	value and index
+
+Which registers are used to pass arguments to display_value_at_index?
+
+	r5, r6
+
+Which subroutine accesses a variable that is declared in C?
+
+	reset_display
+
+Which instruction is used to access the variable declared in C?
+
+	00000530:   lwi r9, r7, 7988
+
+How is the address obtained?
+
+	variable display_codes is used in the assembly code and translated to immediate value of memory address by assembler.	
+
+Assignment 7. 
+
+

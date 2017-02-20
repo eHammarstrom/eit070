@@ -1,6 +1,6 @@
-14:10:25 **** Incremental Build of configuration Debug for project Lab2 ****
+11:36:36 **** Incremental Build of configuration Debug for project Lab2 ****
 make all 
 make: Inget behöver göras för "all".
 
-14:10:25 Build Finished (took 156ms)
+11:36:36 Build Finished (took 141ms)
 
