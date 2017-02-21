@@ -12,5 +12,7 @@ extern void readSwitches_writeLed_Assembly();
 extern void function();
 extern void process_switches();
 extern void make_leds_great_again();
+extern void make_segments_great_again();
+extern void make_numbers_great_again();
 
 #endif /* SRC_ASSEMBLYIMPLEMENTATION_H_ */

@@ -1,21 +1,6 @@
-12:21:07 **** Auto Build of configuration Debug for project Lab3 ****
+11:21:41 **** Incremental Build of configuration Debug for project Lab3 ****
 make all 
-'Building file: ../src/AssemblyImplementation.S'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AssemblyImplementation.o" -I../../Lab3_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/AssemblyImplementation.d" -MT"src/AssemblyImplementation.o" -o "src/AssemblyImplementation.o" "../src/AssemblyImplementation.S"
-'Finished building: ../src/AssemblyImplementation.S'
-' '
-'Building target: Lab3.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.4 -mxl-soft-mul -Wl,--no-relax -o "Lab3.elf"  ./src/AssemblyImplementation.o ./src/displays.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: Lab3.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size Lab3.elf  |tee "Lab3.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   8032	    344	   3248	  11624	   2d68	Lab3.elf
-'Finished building: Lab3.elf.size'
-' '
+make: Inget behöver göras för "all".
 
-12:21:09 Build Finished (took 2s.156ms)
+11:21:41 Build Finished (took 156ms)
 

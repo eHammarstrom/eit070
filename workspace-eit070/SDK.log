@@ -417,3 +417,65 @@ java.lang.RuntimeException: Error stopping at main.
 11:22:05 INFO  : Processor reset is completed for microblaze_0
 11:25:45 INFO  : Processor reset is completed for microblaze_0
 11:36:37 INFO  : Processor reset is completed for microblaze_0
+08:16:31 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\dic14eh2\git\eit070\workspace-eit070\temp_xsdb_launch_script.tcl
+08:16:34 INFO  : XSDB server has started successfully.
+08:17:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:17:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274592378A" && level==0} -index 0' command is executed.
+08:17:48 INFO  : FPGA configured successfully with bitstream "C:/Users/dic14eh2/git/eit070/workspace-eit070/MicroBlazeHWPlatform_hw_platform_0/download.bit"
+08:40:50 INFO  : Processor reset is completed for microblaze_0
+08:47:00 INFO  : Processor reset is completed for microblaze_0
+09:36:18 INFO  : Processor reset is completed for microblaze_0
+09:41:46 INFO  : Processor reset is completed for microblaze_0
+09:45:01 INFO  : Processor reset is completed for microblaze_0
+09:45:34 INFO  : Processor reset is completed for microblaze_0
+09:47:27 INFO  : Processor reset is completed for microblaze_0
+09:55:21 INFO  : Processor reset is completed for microblaze_0
+10:36:41 INFO  : Processor reset is completed for microblaze_0
+10:38:05 INFO  : Processor reset is completed for microblaze_0
+10:39:54 INFO  : Processor reset is completed for microblaze_0
+10:40:17 INFO  : Processor reset is completed for microblaze_0
+10:40:38 INFO  : Processor reset is completed for microblaze_0
+10:48:25 INFO  : Processor reset is completed for microblaze_0
+10:50:22 INFO  : Processor reset is completed for microblaze_0
+10:52:29 INFO  : Processor reset is completed for microblaze_0
+11:03:35 INFO  : Processor reset is completed for microblaze_0
+11:04:07 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Target request failed: Target is not responding (timed out).
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:806)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:04:13 INFO  : Processor reset is completed for microblaze_0
+11:05:06 INFO  : Processor reset is completed for microblaze_0
+11:06:01 INFO  : Processor reset is completed for microblaze_0
+11:06:39 INFO  : Processor reset is completed for microblaze_0
+11:08:20 INFO  : Processor reset is completed for microblaze_0
+11:15:06 INFO  : Processor reset is completed for microblaze_0
+11:15:28 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Target request failed: Target is not responding (timed out).
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:806)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:15:41 INFO  : Processor reset is completed for microblaze_0
+11:17:28 INFO  : Processor reset is completed for microblaze_0
+11:21:15 INFO  : Processor reset is completed for microblaze_0
+11:21:38 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Target request failed: The program is not being run.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:806)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:21:42 INFO  : Processor reset is completed for microblaze_0

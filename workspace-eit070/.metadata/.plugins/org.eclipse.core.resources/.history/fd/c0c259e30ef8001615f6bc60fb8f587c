@@ -1,0 +1,236 @@
+/*
+ * AssemblyImplementation.S
+ *
+ *  Created on: 20 feb. 2017
+ *      Author: dic14eh2
+ */
+
+.global readSwitches_writeLed_Assembly
+.text
+.ent readSwitches_writeLed_Assembly
+readSwitches_writeLed_Assembly:
+		lwi r11,r0, 0x40020000
+		swi r11,r0, 0x40010000
+		rtsd r15,8
+		nop
+.end readSwitches_writeLed_Assembly
+
+.global function
+.text
+.ent function
+function:
+		addi r1,r1,-4
+		swi r15,r1,0
+		lwi r5,r0, 0x40020000
+		brlid r15, number_of_ones
+		nop
+		add r5,r3,r0
+		brlid r15,translateN
+		nop
+		swi r3,r0,0x40010000
+		lwi r15,r1,0
+		addi r1,r1,4
+		rtsd r15, 8
+		nop
+.end function
+
+.global number_of_ones
+.text
+.ent number_of_ones
+number_of_ones:
+		add r3,r0,r0
+while: 	beqid r5, result
+		nop
+		andi r4,r5,1
+		add r3,r3,r4
+		sra r5,r5
+		brid while
+		nop
+result: rtsd r15, 8
+		nop
+.end number_of_ones
+
+.global translateN
+.text
+.ent translateN
+translateN:
+		addi r3,r0,1
+again: 	beqid r5, done
+		nop
+		addi r5,r5,-1
+		add r3,r3,r3
+		brid again
+		nop
+done: 	addi r3,r3,-1
+		rtsd r15, 8
+		nop
+.end translateN
+
+.global process_switches
+.text
+.ent process_switches
+process_switches:
+			addi r1,r1,-4
+			sw r15,r1,r0
+			lwi r6,r0, 0x40020000
+			add r5,r0,r0
+			addi r7,r0,8
+			addi r10,r0,1
+shift: 		beqi r7, arg_ready
+			nop
+			andi r9, r6,1
+			add r5,r5,r5
+			add r5,r5,r9
+			sra r6,r6
+			rsub r7,r10,r7
+			brid shift
+			nop
+arg_ready: 	brlid r15, number_of_ones
+			nop
+			add r7,r3,r0
+			add r5,r6,r0
+			brlid r15, first_position_of_one
+			nop
+			add r6,r3,r0
+			add r5,r7,r0
+			brlid r15, display_value_at_index
+			nop
+			lw r15,r1,r0
+			addi r1,r1,4
+			rtsd r15, 8
+			nop
+.end process_switches
+
+.global first_position_of_one
+.text
+.ent first_position_of_one
+first_position_of_one:
+			add r3,r0,r0
+			beqi r5, found
+			nop
+next: 		andi r4,r5,1
+			bneid r4, found
+			nop
+			addi r3,r3,1
+			sra r5,r5
+			brid next
+			nop
+found: 		rtsd r15,8
+			nop
+.end first_position_of_one
+
+.global display_value_at_index
+.text
+.ent display_value_at_index
+display_value_at_index:
+			add r7,r5,r5
+			add r7,r7,r7
+			add r8,r6,r6
+			add r8,r8,r8
+			addi r9,r0,7
+			addi r10,r0,0x44A00000
+			addi r11,r0,1
+reset_display: 	add r12, r9,r9
+			add r12,r12,r12
+			sw r0,r10,r12
+			rsub r9,r11,r9
+			bgeid r9, reset_display
+			nop
+			lwi r9,r7,display_codes
+			sw r9, r10, r8
+			rtsd r15, 8
+			nop
+.end display_value_at_index
+
+.global make_leds_great_again
+.text
+.ent make_leds_great_again
+make_leds_great_again:
+			addi 	r6, r0, 0x40020000 /* 0TH SWITCH DATA ADDRESS */
+			addi 	r7, r0, 0x40010000 /* 0TH LED DATA ADDRESS */
+
+			lwi 	r10, r6, 0
+
+			andi 	r11, r10, 0xFF /* TARGET 8 RIGHTMOST SWITCHES BITS */
+
+			addi 	r5, r0, 8
+
+shifter:	beqi 	r5, compare
+			addi 	r5, r5, -1
+			sra 	r10, r10
+
+			brid 	shifter
+			nop
+
+compare:	rsub 	r12, r11, r10
+
+			bgti 	r12, is_greater
+
+			xor 	r10, r10, r10
+			swi 	r10, r7, 0
+
+			rtsd 	r15, 0
+			nop
+
+is_greater: addi 	r10, r0, 0xFFFF
+			swi 	r10, r7, 0
+
+			rtsd 	r15, 0
+			nop
+
+.end make_leds_great_again
+
+.global make_segments_great_again
+.text
+.ent make_segments_great_again
+make_segments_great_again:
+			addi 	r6, r0, 0x40020000 /* 0TH SWITCH DATA ADDRESS */
+			addi 	r7,	r0,	0x44A00000 	/* 0TH SEGMENT */
+
+			lwi 	r10, r6, 0
+
+			andi 	r11, r10, 0xFF /* TARGET 8 RIGHTMOST SWITCHES BITS */
+
+			addi 	r5, r0, 8
+
+shifter1:	beqi 	r5, compare1
+			addi 	r5, r5, -1
+			sra 	r10, r10
+
+			brid 	shifter1
+			nop
+
+compare1:	xor 	r12, r11, r10
+
+			addi 	r5, r0, 8
+
+start1:		beqi 	r5, end1
+			addi 	r5, r5, -1
+
+			andi 	r10, r12, 1 /* 1 or 0 */
+
+			addi 	r2, r0, 7 /* index correction */
+			rsub 	r11, r2, r5 /* segment index */
+
+			add 	r3, r11, r11 /* get segment mem index */
+			add 	r3, r3, r3 /* get segment mem index */
+
+			sw 		r0, r7, r3 /* dump 0 into segment mem address for index r3 */
+
+			beqi 	r10, start1 /* if index != 0 */
+
+			addi 	r4, r0, 4 /* always draw 1 */
+
+			lwi 	r3, r4, display_codes
+
+			brid 	start1
+			nop
+
+end1:		rtsd 	r15, 0
+			nop
+
+.end make_segments_great_again
+
+
+
+

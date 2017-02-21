@@ -146,27 +146,156 @@ reset_display: 	add r12, r9,r9
 .text
 .ent make_leds_great_again
 make_leds_great_again:
+			addi 	r6, r0, 0x40020000 /* 0TH SWITCH DATA ADDRESS */
+			addi 	r7, r0, 0x40010000 /* 0TH LED DATA ADDRESS */
 
-			addi 	r3, r0, 0x40020000 /* 0TH SWITCH DATA ADDRESS */
-			addi 	r4, r0, 0x40010000 /* 0TH LED DATA ADDRESS */
+			lwi 	r10, r6, 0
 
-			lwi 	r10, r3, 0
-
-			andi 	r11, r10, 0xFF /* TARGET 8 LEFTMOST SWITCHES BITS */
+			andi 	r11, r10, 0xFF /* TARGET 8 RIGHTMOST SWITCHES BITS */
 
 			addi 	r5, r0, 8
 
-loopy:		beqi 	r5, doney
+shifter:	beqi 	r5, compare
 			addi 	r5, r5, -1
 			sra 	r10, r10
 
-			brid loopy
+			brid 	shifter
 			nop
 
-doney:		or 		r0, r0, r0
+compare:	rsub 	r12, r11, r10
 
+			bgti 	r12, is_greater
+
+			xor 	r10, r10, r10
+			swi 	r10, r7, 0
+
+			rtsd 	r15, 0
+			nop
+
+is_greater: addi 	r10, r0, 0xFFFF
+			swi 	r10, r7, 0
+
+			rtsd 	r15, 0
+			nop
 
 .end make_leds_great_again
+
+.global make_segments_great_again
+.text
+.ent make_segments_great_again
+make_segments_great_again:
+			addi 	r6, r0, 0x40020000 /* 0TH SWITCH DATA ADDRESS */
+			addi 	r7,	r0,	0x44A00000 	/* 0TH SEGMENT */
+
+			lwi 	r10, r6, 0
+
+			andi 	r11, r10, 0xFF /* TARGET 8 RIGHTMOST SWITCHES BITS */
+
+			addi 	r5, r0, 8
+
+shifter1:	beqi 	r5, compare1
+			addi 	r5, r5, -1
+			sra 	r10, r10
+
+			brid 	shifter1
+			nop
+
+compare1:	xor 	r12, r11, r10
+			addi 	r10, r0, 0xFF
+			xor 	r12, r12, r10
+
+			addi 	r5, r0, 8
+
+start1:		beqi 	r5, end1
+			addi 	r5, r5, -1
+
+			andi 	r10, r12, 1 /* 1 or 0 */
+			sra 	r12, r12 /* shift to target next bit */
+
+			addi 	r2, r0, 7 /* index correction */
+			rsub 	r11, r5, r2 /* segment index */
+
+			add 	r3, r11, r11 /* get segment mem index */
+			add 	r3, r3, r3 /* get segment mem index */
+
+			sw 		r0, r7, r3 /* dump 0 into segment mem address for index r3 */
+
+			beqi 	r10, draw0 /* IS 1 *************/
+
+			addi 	r4, r0, 4 /* always draw 1 */
+
+			lwi 	r2, r4, display_codes /* into r2 load display code 1 */
+			sw 		r2, r7, r3 /* store display code at 0th + index offset */
+
+			brid 	start1
+			nop
+
+draw0:		addi 	r4, r0, 0 /* always draw 0 */ /* IS 0 ************/
+
+			lwi 	r2, r4, display_codes
+			sw 		r2, r7, r3
+
+			brid 	start1
+			nop
+
+end1:		rtsd 	r15, 0
+			nop
+
+.end make_segments_great_again
+
+.global make_numbers_great_again
+.text
+.ent make_numbers_great_again
+make_numbers_great_again:
+			addi 	r11, r0, 0x40020000 	/* 0TH SWITCH DATA ADDRESS */
+			addi 	r12, r0, 0x44A00000 	/* 0TH SEGMENT */
+			addi 	r16, r15, 0
+
+			addi 	r13, r0, 0
+			addi	r14, r0, 0
+
+			addi 	r5, r0, 0
+			swi 	r5, r12, 0
+			swi 	r5, r12, 4
+
+			lw 		r5, r0, r11
+			brlid 	r15, number_of_ones
+			nop
+			add 	r5, r3, r0
+
+			brlid 	r15, n_to_display_rep
+			nop
+			addi 	r12, r0, 0x44A00000 	/* 0TH SEGMENT */
+			swi 	r14, r12, 0
+			swi		r13, r12, 4
+
+			rtsd 	r16, 0
+			nop
+
+.end make_numbers_great_again
+
+.global n_to_display_rep
+.text
+.ent n_to_display_rep
+n_to_display_rep:
+
+ 			addi 	r12, r5, -10
+
+ 			blti 	r12, normal
+
+ 			addi 	r5, r5, -10
+
+			addi 	r11, r0, 4
+ 			lwi 	r13, r11, display_codes 	/* Get representation of 1 */
+
+normal:		add 	r5, r5, r5
+			add 	r5, r5, r5
+
+			lwi 	r14, r5, display_codes 	/* Get representation of first digit */
+
+			rtsd 	r15, 8
+			nop
+.end n_to_display_rep
 
 
 
