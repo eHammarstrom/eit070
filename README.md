@@ -15,23 +15,49 @@ Detta kan vara maskinkod, eller ett mellanspråk.
 5. Java
 
 6. Maskinspråk är binärkod som procerssorn direkt kan tolka.
-Högnivåsprǻk kan ej tolkas av processorn och har en hög abstraktionsnivå.
+Högnivåspråk kan ej tolkas av processorn och har en hög abstraktionsnivå.
 
 7. Alla integer beräkningar görs av ALU:n, men till flyttal
 används en FPU (Floating-point-unit).
 
-8. 
-        __Kontrollenhet__
+8. In- och utdata för ALU och Kontrollenhet
+    __Kontrollenhet__
         Indata:
         00001   01110001    011
         MOVE    ADDRESS     REGISTER
-        Utdata: ?
-        __ALU__
+        Utdata: "Säga till processorn vilken operation och vilka register som skall användas"
+    __ALU__
         Indata:
         IN1, IN2, + Eventuella statussignaler
         Utdata:
         UT, + Eventuella statussignaler
 
-9. Hello 
+9. Accesstiden för registerlagring är flera potenser snabbare.
+Access av data i processorregister förväntas ta få antal ns, 
+L1 tar ~10ns, L2 10-tal ns, RAM ~100ns (Primärminne), HDD 10-tal ms (Sekundärminne).
 
+10. Under Fetch hämtas instruktion där PC pekar och flyttar instruktionen till CPU:n 
+där kontrollenheten avkodar instruktionen, under execute hämtas datan och operationen 
+görs för att sedan lagra detta i ett register. Ja, 100%.
 
+11. Apollos vägledningsdator. Industrisammanhang. Algoritmisk börshandel. Dammportar.
+
+12. Smartphone, bärbar dator, persondator, superdator, minidator, servrar?
+
+13. Överallt! Microprocessorer överallt, miniräknare, programmerbara styrsystem osv.
+
+14. Flyktigt minne, RAM, återställs/töms när strömtillförseln stryps.
+
+15. RAM (Primärminne) och Processorregister
+
+16. Minne som kvarstår, bevaras och kan förflyttas fysiskt utan systemkoppling.
+
+17. HDD (Sekundärminne) roterande skivor med magnetisk beläggning.
+
+18. Skär ut rektangulära chip-skivor ur de stora runda siliconskivorna.
+
+19. Gordon E. Moore och Robert Noyce
+
+20. Se svar till fråga 1.
+
+21. ![von_neumann_architecture](von_neumann_architecture.png)
