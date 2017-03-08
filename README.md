@@ -20,20 +20,20 @@ Högnivåsprǻk kan ej tolkas av processorn och har en hög abstraktionsnivå.
 7. Alla integer beräkningar görs av ALU:n, men till flyttal
 används en FPU (Floating-point-unit).
 
-8. 
-```
-__Kontrollenhet__
-Indata:
-    00001   01110001    011
-    MOVE    ADDRESS     REGISTER
-Utdata:
-
-__ALU__
-Indata:
-    IN1, IN2, + Eventuella statussignaler
-Utdata:
-    UT, + Eventuella statussignaler
-```
+8.
+        ```
+        __Kontrollenhet__
+        Indata:
+            00001   01110001    011
+            MOVE    ADDRESS     REGISTER
+        Utdata:
+        
+        __ALU__
+        Indata:
+            IN1, IN2, + Eventuella statussignaler
+        Utdata:
+            UT, + Eventuella statussignaler
+        ```
 
 9. Hello 
 
