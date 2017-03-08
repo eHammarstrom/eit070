@@ -85,4 +85,45 @@ görs för att sedan lagra detta i ett register. Ja, 100%.
 27. Arithmetic Logic Unit (Aritmetisk Logisk Enhet) som utför logiska operationer 
 så som AND, OR, ADD och SUB.
 
-28. 
+28. För snabb åtkomst av data samt mellanlagring vid beräkningar.
+
+29. Data register, Address register (har stack pointern), Generella register, 
+Status register (ex. bool flaggor för jämförelser) osv.
+
+30. 
+
+31. 8 bits
+
+32. 1 byte = 8 bits
+
+33. 0-255
+
+34. Den första biten avgör om talet är positivt eller negativt, 1 negativt, 0 positivt. 
+Om inledande bit är 1 och följande 7 också är 1, dvs. 1111 1111, har vi -1. 
+Detta kan ses som att man har -128 och adderar 0111 1111 (127) vilket blir -1. 
+0000 0000 blir fortfarande 0. Övre gräns blir 127, undre -128.
+
+35. Little Endian byter att du lagrar den minst signifikanta biten först.
+Om vi har ett ord 0A 0B 0C 0D kan vi lagra detta i minnet som 0D, 0C, 0B, 0A. 
+I Big Endian (American Supersize-Me Endian) hade vi lagrat 0A, 0B, 0C, 0D.
+
+36. Se svar 25.3 till fråga 25.
+
+37. 1/1Ghz = 1ns
+
+38. 1Ghz/10 = 0.1G = 100M
+
+39. Vi kan minska antalet instruktioner för att ex. komma åt ett värde i en datastruktur 
+dvs. göra en sökning efter ett värde i en struktur.
+
+40. Enormt, om vi säger att en instruktion tar 10 klockcykler med en 1Ghz processor 
+så tar en instruktion 10ns, jämför detta med att hämta datan först från primärminne, 100ns, 
+och sekundärminne, 10 000 000ns.
+
+41. 47
+
+42. 0x2F
+
+43. 65050
+
+44. 0b1111111000011010
