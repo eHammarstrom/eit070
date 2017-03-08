@@ -21,12 +21,14 @@ Högnivåspråk kan ej tolkas av processorn och har en hög abstraktionsnivå.
 används en FPU (Floating-point-unit).
 
 8. In- och utdata för ALU och Kontrollenhet
-    __Kontrollenhet__
+
+        Kontrollenhet
         Indata:
         00001   01110001    011
         MOVE    ADDRESS     REGISTER
         Utdata: "Säga till processorn vilken operation och vilka register som skall användas"
-    __ALU__
+
+        ALU
         Indata:
         IN1, IN2, + Eventuella statussignaler
         Utdata:
@@ -60,4 +62,5 @@ görs för att sedan lagra detta i ett register. Ja, 100%.
 
 20. Se svar till fråga 1.
 
-21. ![von_neumann_architecture](von_neumann_architecture.png)
+21. 
+![von_neumann_architecture](von_neumann_architecture.png)
