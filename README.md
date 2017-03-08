@@ -127,3 +127,50 @@ och sekundärminne, 10 000 000ns.
 43. 65050
 
 44. 0b1111111000011010
+
+## Pipelining
+
+1. Pipelining är när vi kör flera olika intruktioner samtidigt. Exempelvis, om 
+vi har instruktionerna Fetch och Execute så kan vi köra en Fetch och en Execute samtidigt 
+men aldrig 2 Fetch samtidigt.
+
+2. 
+
+
+        Fetch instruction (FI)
+        Decode instruction (DI)
+        Calculate operand address (CO)
+        Fetch operand (FO)
+        Execute instruction (EI)
+        Write operand (WO)
+
+__Strukturella Hazards__
+
+Resursproblem, vi kan ej göra fetch av instruktion och operand samtidigt från _minne_. 
+Detta kan lösas genom att förskjuta en pipeline med 1 nop, om hämtning görs i register händer inget.
+
+Vi kan också lösa detta genom att ha ett cacheminne för instruktioner och ett för data (operander).
+
+
+__Data Hazards__
+
+Om en instruktion gör en beräkning och nästa instruktion är beroende av den instruktionen 
+så får vi ett gammalt värde om vi ej stallar 2 cykler.
+
+    FI  DI  CO  FO  EI  <WO>                (MUL R2, R3)
+
+        FI  DI  CO  <FO>  EI  WO            (ADD R1, R2) (FO before WO)
+
+            FI  DI  CO  <FO>  EI  WO        (FO collides with WO)
+
+                FI  DI  CO  <FO>  EI  WO    (FO after WO, this is OK)
+
+## Minne
+
+## Operativsystem
+
+## Cacheminne
+
+## Parallellism
+
+
