@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Lab1/src/address_mappings.h&apos; to &apos;address_mapping.h&apos;" description="Rename resource &apos;address_mappings.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/address_mappings.h" name="address_mapping.h" stamp="1486455388697" updateReferences="true"/>
-</session>
