@@ -64,3 +64,25 @@ görs för att sedan lagra detta i ett register. Ja, 100%.
 
 21. 
 ![von_neumann_architecture](von_neumann_architecture.png)
+
+22. Se svar till fråga 3.
+
+23. Se svar till fråga 6.
+
+24. Se svar till fråga 5.
+
+25. 
+    1. Vi hämtar instruktionen där PC pekar
+    2. Vi flyttar instruktionen till CPU:n
+    3. Kontrollenheten avkodar instruktionen till operationer 
+    som processorn skall göra med specifierade register.
+
+26. 
+    1. Vi exekverar den operation som Fetch gav oss.
+    Detta kan vara att hämta data eller göra en beräkning.
+    2. Vi lagrar datan i det register eller på den minnesplats Fetch gav oss.
+
+27. Arithmetic Logic Unit (Aritmetisk Logisk Enhet) som utför logiska operationer 
+så som AND, OR, ADD och SUB.
+
+28. 
