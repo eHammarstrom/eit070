@@ -334,7 +334,113 @@
     Assemblatorn lägger alltid en _nyttig_ beräkning efter branchen med delay. 
     Innan hade vi alltid stalls.
 
+8. __Delayed load - vad är det? Vinst? Ge ett exempel.__
+
+    När vi använder LOAD och STORE hinner dessa operationer ej 
+    utföras på en klockcykel. Detta innebär att om vi försöker LOAD:a ett värde 
+    och sedan direkt efter har en instruktion som skall utföra en beräkning med det laddade värde 
+    så går detta ej då värdet inte hunnit laddas in. Se figur.
+
+    ![delayed_load_problem](images/delayed_load_problem.png)
+
+9. __Ge exempel på en kompilatorteknik som används för att undvika/hantera konflikter i pipelinen.__
+
+    Delayed branching, automatisk nop-insättning efter känsliga instruktioner för strukturella- och datakonflikter, som `lw` (Load Word).
+
 ## Minne
+
+1. __Hur lagras information på en hårddisk?__
+
+    Lagras med hjälp av sektorer på magnetisk disk.
+
+2. __Vad är random access när man talar om minnen?__
+
+    Minne lagras random, så att accesstiden uppfattas lika för alla hämtningar.
+
+3. __Ge exempel på minne som inte har random access?__
+
+    Sekundärminne (Hårddisk)
+
+4. __Vad är en minneshierarki?__
+
+    ![minnes_pyramid](images/minnes_pyramid.png)
+
+5. __Varför uppstår en minneshierarki?__
+
+    Hastighet, datamängd och pris.
+
+6. __Vad kallas principen som gör att cacheminne fungerar?__
+
+    Om du skall loopa över instruktioner ett flertal gånger så tjänar man på att lagra dessa i cacheminnet. 
+    Om du däremot bara läser in instruktioner sekventiellt utan loop så tjänas inget av cachen.
+
+7. __Vad är en cachemiss? Varför uppkommer en cachemiss? Hur hanteras det?__
+
+    En cachemiss är när vi ex. vill läsa eller skriva data till L1 cachen men den har inte addressblocket vi söker. 
+    För att hantera detta söker man i nästa cachesteg, L2. Sedan L3. Om detta ej fungerar så måste vi antingen hämta block från primärminnet 
+    eller göra en direktskrivning/direktläsning.
+
+8. __Cacheminnen kan ha olika mappningar - vilka? Hur fungerar varje mappning?__
+
+    Direktmappning - Vi söker på cacheline, om vi hittar rätt cacheline då kollar vi om taggen stämmer. Vi lagrar med en direktmappning, 
+    det vill säga, cacheline blir 14 least significant bits i primärminnesaddressen och taggen blir 8 most significant bits av primärminnesaddressen.
+    Associative mappning - Vi använder nu endast tags, och får göra större sökningar då vi inte har direktmappat minne utan vi slänger in primäraddress 
+    som tag (-2 bit för byte target, ges av cpu).
+    2-way set associative mappning - Direktmappning fast med ett set om 2 platser.
+
+9. __I direktmappning, hur ersätts cacherader vid cachemissar?__
+
+    De skrivs över.
+
+10. __Vad är en ersättningsalgoritm?__
+
+    ![replace_algo](images/replace_algo.png)
+
+11. __Vad menas med att cacheminnet ej är konsekvent? Och hur hålls ett cacheminne konsekvent?__
+
+    Om vi har en loop där en variabel förändras kommer denna ej ha samma värde i cacheminne som primärminne.
+
+    Såhär gör man,
+
+    ![cache_write](images/cache_write.png)
+
+12. __Antag ett program som exekverar alla instruktioner i en sekvens (en i taget) och att det finns ett cacheminne för instruktioner där cacherader har storlek 64bytes och varje instruktion kräver 2 bytes. Vad är sannolikheten för att nästa instruktion finns i samma cacherad som förra instruktion?__
+
+    `1/32`
+
+13. __Vad är fördelen med paging?__
+
+    Ett program består av flera _pages_ och vi laddar inte in hela programmet utan endast de _pages_ som behövs i primärminnet.
+
+14. __Vad är nackdelar med paging?__
+
+    Sidfel.
+
+15. __Vad är fragmentering när vi pratar om paging?__
+
+    När massor med småplatser uppstår primärminnet för page lagring som gör att vi ej kan kicka igång stora program.
+
+16. __Vad är skillnaden på extern fragmentering och intern fragmentering?__
+
+    _Extern fragmentering_
+
+    Ledigt lagringsutrymme som delas upp i mindre platser som inte ligger jämte varandra.
+
+    _Intern fragmentering_
+
+    Allokerar lagringsutrymme som ej används. Filer mindre än blocket gör att vi har slösaktig allokering. 
+    Kom ihåg att detta kan vara accepterbart i gengäld mot ökad effektivitet och enkelhet.
+
+17. __Vad är paging?__
+
+    Se svar till fråga 13.
+
+18. __Vad är en sida (page) och en ram (fram)?__
+
+    Ett program är indelat i flera pages.
+
+    En page fram är en fixt längd av kontinuerligt virtuellt minne.
+
 
 ## Operativsystem
 
