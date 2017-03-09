@@ -498,7 +498,7 @@
 
     Schemaläggaren är inblandad.
 
-6. __Behövs avbrott för att klara av att göra kontextbyten?
+6. __Behövs avbrott för att klara av att göra kontextbyten?__
 
     Ja.
 
@@ -518,6 +518,175 @@
 
 ## Cacheminne
 
+1. __Vad är skillnaden mellan primärminne och sekundärminne?__
+
+    Se svar till fråga _Processorn_ 15, 17.
+
+2. __Om du skall föreslå ett sätt att lagra filer på ett sekundärminne, 
+vilka avvägningar gör du (och vilka parametrar avgör)?__
+
+    Cluster skall ligga så nära varandra som möjligt. 
+    Vi bör ha en ordentlig datastruktur för att inte behöva lägga ner tid 
+    att söka efter våra cluster. Små cluster kan ge mindre fragmentering.
+
+3. __Varför behövs cacheminnen?__
+
+    För att effektivisera processorns exekveringstid. Hämtningar är den 
+    den svaga länken.
+
+4. __Vad är en minneshierarki?__
+
+    Se svar till _Minne_ fråga 4.
+
+5. __Vilken princip gör att cacheminnen fungerar?__
+
+    Se svar till _Minne_ fråga 6.
+
+6. __Vad är en cacherad?__
+
+    En cacherad innehåller tag, cacheline och data.
+
+7. __På vilka sätt kan man bygga ett cacheminne?__
+
+    Vi kan ha ett cacheminne till data och ett till instruktioner. 
+    Eller så har vi ett unified cacheminne.
+
+8. __Vilka paramterar måste man bestämma om man har ett cacheminne av 
+storlek N bytes som ska användas till ett primärminne med storlek M bytes?__
+
+    Tag, cacheline, Valid bit.
+
+9. __Vad gör en tag?__
+
+    Identifierar en cacherad.
+
+10. __Varför har man flera nivåer i ett cachesystem?__
+
+    För att kunna lagra det man använde absolut senaste och om det
+    inte är absolut senaste så finns det i en nivå upp. Och vi har flera nivåer 
+    då vi vill ha små och snabba cacheminnen. Så vi baserar cachestorlek på lokalitetsprincip.
+
+11. __Varför har man I-cache och D-cache?__
+
+    För att minimera stalls i pipeline. FO, WO och FI, FO kan göras samtidigt.
+
+12. __Vad är TLB?__
+
+    Translation Look-Aside Buffer.
+
+    Det är i princip en cache för endast pages. 
+    Används för att minimera tiden för att hitta en page location.
+
+13.  __Måste man ha en skrivstrategi?__
+
+    Ja.
+
+14. __Varför används paging?__
+
+    För att dela upp ett program i flera sidor, detta tillåter oss att använda 
+    primärminnet för att köra program.
+
+15. __Var lagrar man sidtabellen?__
+
+    I det virtuella minnet.
+
+## Pipelining
+
+16. __Hur många instruktioner är aktiva i en pipeline med 6-steg?__
+
+    6
+
+17. __Hur påverkas kontrollenheten av pipelining?__
+
+    ..
+
+18. __Vilka problem kan uppkomma med pipelining?__
+
+    Se svar till _Pipelining_ fråga 2.
+
+19. __Ge exempel på hur dessa problem uppkommer.__
+
+    Se svar till _Pipelining_ fråga 2.
+
+20. __Hur löser man dessa problem?__
+
+    Se svar till _Pipelining_ fråga 2.
+
+21. __Hur kan kompilatorn förhindra dessa problem?__
+
+    Automatic nopping eller ändring av ordning.
+
+22. __Vad är en _LOAD_ & _STORE_ arkitektur?__
+
+    RISC är ett exempel på en LOAD, STORE arkitektur. 
+    Det bygger på att man läser och skriver mellan register och minne.
+
 ## Parallellism
 
+1. __Vad är superscalar?__
 
+    En arkitektur som tillåter att mer än en instruktion initieras samtidigt. 
+    De exekveras oberoende av varandra.
+
+2. __Vad är superscalar pipelining?__
+
+    Det ger oss möjligheten att initiera flera instruktioner samtidigt i samma pipeline steg. 
+    Det är möjligt att initiera flera instruktioner i samma klockcykel.
+
+3. __Vad är skillnaden mellan en superscalar processor och en very long instruction word processor?__
+
+    _VLIW_ använder kompilatorn för att detektera parallelism.
+
+    _Superscalar_ använder hårdvaran för att detektera parallelism.
+
+4. __Vad är skillnaden mellan en tråd och en process?__
+
+    _Tråd_: Delar resurser
+
+    _Process_: Mer oberoende
+
+5. __Vad är skillnaden mellan en process och en processor?__
+
+    Ett program är en del av en process som exekveras på en processor.
+
+6. __Hur klassificerar Flynn arkitekturer?__
+
+    ![flynn_arch](images/flynn_arch.png)
+
+7. __Vad hindrar en processor med 4 cores att exekvera ett program 4 gånger snabbare än en processor med 1 core?__
+
+    Programmet är ej optimerat för parallelism.
+
+8. __Vad menas med Amdahls lag?__
+
+    ![amdahl_law](images/amdahl_law.png)
+
+9. __Vilka konflikter uppkommer i en superscalar processor?__
+
+    Man behöver mycket hårdvara för att detektera möjlig parallelism. 
+    Hög effektförbrukning på grund av hårdvara.
+
+    Begränsat instruktionsfönster, det gör att det blir svårare att hitta instruktioner 
+    som har möjlighet att exekveras parallellt.
+
+10. __Vad är in-order och out-of order issue/completion?__
+
+    _In-order issue with in-order completion_
+
+    Vi gör en beräkning under samma cykel då vi får ett svar för en av våra beroende operander.
+
+    _In-order issue with out-of order completion_
+
+    Ingen kontroll över när en beräkning färdigställs.
+
+    _Out-of order issue with out-of order completion_
+
+    Ingen kontroll, allt ballar ur.
+
+11. __Varför används register renaming?__
+
+    Optimering för att kunna lägga instrukioner i en annan ordning.
+
+12. __Vad är multithreading?__
+
+    ![multithreading](images/multithreading.png)
