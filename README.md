@@ -1,5 +1,15 @@
 # Instuderingsfrågor 2017
 
+_Författare:_
+    
+Emil Hammarström
+
+Adam Thuvesen
+
+Pontus Ovhagen
+
+`Koffeindonationer uppskattas.`
+
 ## Processorn
 
 1. __Vad är Moores lag?__
