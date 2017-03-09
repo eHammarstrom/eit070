@@ -473,6 +473,49 @@
 
 ## Operativsystem
 
+1. __Vad gör ett operativsystem?__
+
+    Programvara som agerar abstraktion mellan maskinvara och applikationer (Tillämpningsprogram).
+
+2. __Vad är multitasking?__
+
+    Körning av flera processer samtidigt.
+
+3. __En användare känner att flera program exekverar samtidigt, hur är det möjligt?__
+
+    Schemaläggaren hanterar exekvering, tilldelar körningstid.
+
+4. __Vad är ett kontextbyte?__
+
+    Ett byte av tråd som exekverar.
+
+5. __Hur går det till? Hur vet man om att det ska ske? Vem är inblandad?__
+
+    Vi sparar det körande stadiet och sedan laddar vi in det stadie som skall köras. 
+    Sedan körs detta stadie, och sparas sedan när vi vill ladda tillbaka det som kördes från första början.
+
+    Det genereras av en extern klocka eller när ett program gör ett systemanrop.
+
+    Schemaläggaren är inblandad.
+
+6. __Behövs avbrott för att klara av att göra kontextbyten?
+
+    Ja.
+
+7. __Hur fungerar avbrott?__
+
+    Vi sparar vår stackpekare och hoppar till en avbrottsstack för att undvika att 
+    minnet tar slut för det program som körs.
+
+8. __Om man skapar en struktur för att lagra filer, vad vill man uppnå?__
+
+    Målet är att vi skall kunna lagra stora filer och nå dem snabbt. (Utnyttja hårddisken maximalt)
+
+9. __Om man ska läsa in en fil från en hårddisk, vad påverkar lästiden?__
+
+    Läshastighet på hårddisk. Nuvarande användning av hårddisken (Aktivitet). 
+    Filsystemsformat. Fragmentering.
+
 ## Cacheminne
 
 ## Parallellism
