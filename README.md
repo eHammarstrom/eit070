@@ -435,12 +435,41 @@
 
     Se svar till fråga 13.
 
-18. __Vad är en sida (page) och en ram (fram)?__
+18. __Vad är en sida (page) och en ram (page frame)?__
 
     Ett program är indelat i flera pages.
 
-    En page fram är en fixt längd av kontinuerligt virtuellt minne.
+    En page frame är en fixt längd av kontinuerligt virtuellt minne.
 
+19. __Om en sida är 2kBytes, kan man säga något om storleken på primärminnet? Kan man säga något om storleken av en ram (page frame)?__
+
+    Vi kan ej avgöra primärminnets storlek. Men vi vet att en page frame har samma storlek som en page, för att förhindra intern fragmentering i en page frame.
+
+20. __Vad är demand paging?__
+
+    Vi laddar endast de sidor som behövs.
+
+21. __Vad är så kallad thrashing? När uppkommer det?__
+
+    Vi försöker byta ut pages från sekundärminne till primärminne för ofta (Många program igång samtidigt).
+
+22. __Vad är skillnaden på paging och virtuellt minne?__
+
+    _virtuellt minne_
+
+    Virtuellt minne är när vi behöver mer minne än vad som finns fysiskt, då allokerar vi en del minne på sekundärminnet för pages.
+
+    _paging_
+    
+    Vi delar upp vårt program i delar.
+
+23. __Vad är sidfel?__
+
+    När sidan ej finns i primärminnet.
+
+24. __Vad händer vid sidfel? Hur hanteras det?__
+
+    Vi får en miss i primärminnet och laddar då in sidan från sekundärminnet in i primärminnet i en ram.
 
 ## Operativsystem
 
