@@ -14,7 +14,7 @@ Pontus Ovhagen
 
 1. __Vad är Moores lag?__
     
-    Observation av att antalet transistorer dubblas varje år.
+    Observation av att antalet transistorer dubblas vartannat år.
 
     __Vad är Murphys lag?__
 
