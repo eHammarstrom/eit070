@@ -451,7 +451,7 @@ Pontus Ovhagen
 
     Ett program är indelat i flera pages.
 
-    En page frame är en fixt längd av kontinuerligt virtuellt minne.
+    En page frame är en fixt längd ram i primärminnet som lagrar pages för snabbare access.
 
 19. __Om en sida är 2kBytes, kan man säga något om storleken på primärminnet? Kan man säga något om storleken av en ram (page frame)?__
 
