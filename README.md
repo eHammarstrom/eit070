@@ -74,9 +74,7 @@ Pontus Ovhagen
 
 10. __Om en processor gör _fetch_ och _execute_, vad görs under _fetch_? Vad görs under _execute_? Är det som görs under _fetch_ samma för alla instruktioner?__
 
-    Under Fetch hämtas instruktionen där PC pekar och flyttar instruktionen till CPU:n 
-    där kontrollenheten avkodar instruktionen, under execute hämtas datan och operationen 
-    görs för att sedan lagra detta i ett register. Ja, 100%.
+    Se svar till fråga 25 och 26. Och _fetch_ är detsamma för alla instruktioner.
 
 11. __Ge exempel på system där man hittar datorer.__
 
@@ -141,15 +139,16 @@ Pontus Ovhagen
 25. __Vad händer under _fetch_ fasen?__
 
     1. Vi hämtar instruktionen där PC pekar
-    2. Vi flyttar instruktionen till CPU:n
-    3. Kontrollenheten avkodar instruktionen till operationer 
-    som processorn skall göra med specifierade register.
+    2. Vi flyttar instruktionen till CPU:n (Instruction Register)
+    3. Ökar PC
 
 26. __Vad händer under _execute_ fasen?__
 
-    1. Vi exekverar den operation som Fetch gav oss.
+    1. Avkodar instruktionen till operationer 
+    som processorn skall göra med specifierade register.
+    2. Vi exekverar den operation som Fetch gav oss.
     Detta kan vara att hämta data eller göra en beräkning.
-    2. Vi lagrar datan i det register eller på den minnesplats Fetch gav oss.
+    3. Vi lagrar datan i det register eller på den minnesplats Fetch gav oss.
 
 27. __Vad är en ALU?__
 
