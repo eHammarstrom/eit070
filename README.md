@@ -1,4 +1,4 @@
-# Instuderingsfrågor 2017
+
 
 _Författare:_
     
@@ -165,6 +165,8 @@ Pontus Ovhagen
     Status register (ex. bool flaggor för jämförelser) osv.
 
 30. __Hur många flanker finns det i en klockcykel?__
+
+    2 (En flank är en övergång mellan hog och låg signalnivå)
 
 31. __Hur många bitar behövs för att lagra ett tal som har värden mellan 0 och 255?__
 
